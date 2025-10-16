@@ -19,13 +19,21 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        h1, h2 {
-            /* Make headings look like bold paragraphs */
-            font-size: 20px; /* Set font size to 20px */
-            font-weight: bold; /* Make it bold to stand out */
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
             margin-top: 1.5em;
             margin-bottom: 1em;
-            border-bottom: none; /* Remove the underline */
+            border-bottom: none;
+            padding-bottom: 0;
+            text-align: left;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+            border-bottom: none;
             padding-bottom: 0;
             transition: color 0.3s;
         }
@@ -43,6 +51,13 @@
         a:hover {
             text-decoration: underline;
         }
+        hr {
+            border: none;
+            height: 5px;
+            background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+            margin: 40px auto;
+            width: 80%;
+        }
 
         /* Light Theme Styles */
         body {
@@ -58,7 +73,10 @@
                 color: #e0e0e0;
             }
             a {
-                color: #8ab4f8; /* A lighter, more vibrant blue for dark backgrounds */
+                color: #8ab4f8;
+            }
+            hr {
+                background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
             }
         }
     </style>
@@ -66,6 +84,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
+        <hr>
         <p>This privacy policy applies to the <strong>កំណែគណិតវិទ្យា ថ្នាក់ទី៦</strong> app (hereby referred to as "Application") for mobile devices that was created by Cam Develper (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>
         
         <h2>Information Collection and Use</h2>
@@ -130,7 +149,7 @@
         
         <h2>Contact Us</h2>
         <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:nimphilo18@gmail.com">nimphilo18@gmail.com</a>.</p>
-       
     </div>
 </body>
 </html>
+
